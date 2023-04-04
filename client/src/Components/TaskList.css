@@ -1,0 +1,50 @@
+.task-list {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  ul {
+    padding: 0;
+  }
+  
+  li {
+    list-style: none;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f5f5f5; /* default background color */
+  }
+  
+  li.done {
+    background-color: #c8e6c9; /* green background color for completed tasks */
+    text-decoration: line-through;
+  }
+  
+  /* li:not(.done):nth-child(odd) {
+    background-color: #fff; /* white background color for odd-numbered incomplete tasks */
+   */
+  
+  li:not(.done) {
+    background-color: #f2f2f2; /* light gray background color for even-numbered incomplete tasks */
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #3e8e41;
+  }
+  
+  button.delete {
+    background-color: red;
+  }
